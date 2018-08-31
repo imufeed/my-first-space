@@ -31,7 +31,7 @@ public abstract class AbstractBoosterApplicationTest {
            .baseUri(baseURI())
            .get(GREETING_PATH)
            .then()
-           .statusCode(200)
+           .statusCode(200);
            //.body("content", is(String.format(Greeting.FORMAT, "World")));
     }
 
@@ -43,7 +43,7 @@ public abstract class AbstractBoosterApplicationTest {
            .when()
            .get(GREETING_PATH)
            .then()
-           .statusCode(200)
+           .statusCode(200);
            //.body("content", is(String.format(Greeting.FORMAT, "John")));
     }
 
